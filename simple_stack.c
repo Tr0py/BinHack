@@ -3,7 +3,7 @@
 
 void func(int a, int b, int c)
 {
-	char buff1[10];
+	char buff1[5];
 	char buff2[10];
 }
 

@@ -4,7 +4,7 @@ EXEC=simple_login simple_login_s simple_stack
 BUILD=build
 
 all: 
-	mkdir build
+	mkdir -p build
 	make $(EXEC)
 
 simple_stack:simple_stack.c
