@@ -3,6 +3,7 @@
 #include <string.h>
 
 void go_shell() {
+	printf("Login success!\n");
 	system("/bin/sh");
 }
 
@@ -23,7 +24,6 @@ int authorize() {
 
 int main() {
 	if (authorize()) {
-		printf("Login success!\n");
 		go_shell();
 	}
 	else {
