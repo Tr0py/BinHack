@@ -8,16 +8,16 @@ void go_shell() {
 }
 
 int authorize() {
-	char check[64];
 	char password[64];
+	char input[64];
 	FILE *file;
 	file = fopen("password", "r");
-	fgets(check, 30, file);
-	check[strlen(check)-1] = '\0';
+	fgets(password, 30, file);
+	password[strlen(password)-1] = '\0';
 	printf("Enter Password: \n");
-	gets(password);
-	password[63] = '\0';
-	if (!strcmp(password, check))
+	gets(input);
+	input[63] = '\0';
+	if (!strcmp(input, password))
 		return 1;
 	return 0;
 }
