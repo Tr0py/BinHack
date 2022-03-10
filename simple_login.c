@@ -3,7 +3,7 @@
 #include <string.h>
 
 void go_shell() {
-	printf("Login success!\n");
+	printf("Login success! The secret is !@#$!\n");
 	system("/bin/sh");
 }
 
